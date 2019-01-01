@@ -139,12 +139,12 @@ function endGame() {
 function moveDodger(event) {
   if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
   } else if (e.which === LEFT_ARROW) {
-    event.stopPropagation();
     event.preventDefault();
+    event.stopPropagation();
     moveDodgerLeft();
   } else if (e.which === RIGHT_ARROW) {
-    event.stopPropagation();
     event.preventDefault();
+    event.stopPropagation();
     moveDodgerRight();
   } 
 }
