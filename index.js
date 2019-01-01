@@ -136,11 +136,11 @@ function endGame() {
   alert("YOU LOSE!"); 
 }
 
-function moveDodger(event) {
+function moveDodger(e) {
   if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
   } else if (e.which === LEFT_ARROW) {
-    event.preventDefault();
-    event.stopPropagation();
+    e.preventDefault();
+    e.stopPropagation();
     moveDodgerLeft();
   } else if (e.which === RIGHT_ARROW) {
     event.preventDefault();
